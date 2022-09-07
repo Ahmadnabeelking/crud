@@ -1,0 +1,16 @@
+body{
+    background-color: wheat;
+    text-transform: capitalize;
+}
+#nameAlert{
+display: none;
+}
+#priceAlert{
+    display: none;
+}
+#catAlert{
+    display: none;
+}
+#desAlert{
+    display: none;
+}

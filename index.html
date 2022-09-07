@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--hello world-->
+    <title>Document</title>
+</head>
+<body>  
+    <div class="container w-50 m-auto my-5">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Course Name</label>
+          <input type="text" id="coursename" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="nameAlert" class="alert alert-danger">please start name with capital latter and the max number is 8 chacter</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Course Catgory</label>
+          <input type="text" id="coursecat" class="form-control" id="exampleInputPassword1">
+          <div id="catAlert" class="alert alert-danger">the word should be word!</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Course Price</label>
+            <input type="number" id="courseprice" class="form-control" id="exampleInputPassword1">
+            <div id="priceAlert" class="alert alert-danger">the price shoud be number and min number is 2 and max number 9</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Course Description</label>
+            <textarea class="form-control" id="coursedes" id="exampleInputPassword1"></textarea>
+            <div id="desAlert" class="alert alert-danger">you should write any thing</div>
+        </div>  
+
+        <button disabled type="button" id="click" class="btn btn-outline-primary">Add Course</button>
+        <button type="button" id="click-clear" class="btn btn-outline-danger">Clear</button>
+        <button type="button" id="click-delete" class="btn btn-outline-danger">Delete All</button>
+
+        <input type="search" onkeyup="search(this.value)" class="form-control mt-3"  placeholder="search..." />
+
+        <table class="table mt-5 table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Course Name</th>
+                <th scope="col"> Course Catgory</th>
+                <th scope="col">Course Price</th>
+                <th scope="col">Course Description</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="data">
+
+            </tbody>
+        </table>
+          
+    </div>
+
+    <!--link javascript-->
+    <script src="js/java.js"></script>
+    <!-- bootstrap 5 java script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- sweet alert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
